@@ -10,7 +10,7 @@
   "commands": {
     "move_tab": {
       "suggested_key": {
-        "default": "Alt+Shift+O"
+        "default": "Ctrl+Shift+K"
       },
       "description": "Move the current tab to another window"
     }
