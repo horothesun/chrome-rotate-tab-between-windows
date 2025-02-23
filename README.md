@@ -10,4 +10,4 @@ Chrome extension to rotate the current tab between open windows.
 
 ## Usage
 
-Press `Ctrl+Shift+K` to rotate the current tab between open windows.
+Press `Ctrl+Shift+K` (`Cmd+Shift+K` on macOS) to rotate the current tab between open windows.
