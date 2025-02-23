@@ -1,5 +1,5 @@
 {
-  "name": "Move Tab to Another Window",
+  "name": "Move Tab to Next Window",
   "version": "1.0",
   "description": "Move the current tab to another open window with a keyboard shortcut.",
   "manifest_version": 3,
@@ -10,9 +10,10 @@
   "commands": {
     "move_tab": {
       "suggested_key": {
-        "default": "Ctrl+Shift+K"
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
       },
-      "description": "Move the current tab to another window"
+      "description": "Move the current tab to the next window."
     }
   }
 }
