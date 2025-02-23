@@ -1,2 +1,3 @@
-# chrome-rotate-tab-between-windows
+# Tab window rotator
+
 Chrome extension to rotate the current tab between open windows.
