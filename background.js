@@ -15,9 +15,13 @@ chrome.commands.onCommand.addListener((command) => {
         let nextIndex = (currentIndex + 1) % sortedWindows.length;
         let targetWindow = sortedWindows[nextIndex];
 
-        // Move the tab to the next window in rotation
-        chrome.tabs.move(currentTab.id, { windowId: targetWindow.id, index: -1 }, () => {
-          chrome.windows.update(targetWindow.id, { focused: true });
+        // Move the tab to the next window
+        chrome.tabs.move(currentTab.id, { windowId: targetWindow.id, index: -1 }, (movedTab) => {
+          // Ensure the moved tab is activated
+          chrome.tabs.update(movedTab.id, { active: true }, () => {
+            // Bring the new window to the front
+            chrome.windows.update(targetWindow.id, { focused: true });
+          });
         });
       });
     });
